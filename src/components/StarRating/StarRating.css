@@ -1,0 +1,13 @@
+.star-rating { display: flex; align-items: center; gap: 4px; }
+.stars { display: flex; }
+.star { font-size: 14px; line-height: 1; }
+.star-full { color: #F59E0B; }
+.star-half { color: #F59E0B; }
+.star-empty { color: #D1D5DB; }
+.rating-value { font-size: 13px; font-weight: 700; color: var(--text-primary); }
+.review-count { font-size: 12px; color: var(--text-muted); }
+
+.star-md .star { font-size: 18px; }
+.star-md .rating-value { font-size: 15px; }
+.star-lg .star { font-size: 22px; }
+.star-lg .rating-value { font-size: 18px; }

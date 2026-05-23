@@ -1,0 +1,21 @@
+.compare-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: var(--z-sticky);
+  background: white; border-top: 2px solid var(--primary);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.12); padding: var(--space-3) 0;
+}
+.compare-bar-inner { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+.compare-title { font-weight: 700; font-family: var(--font-heading); color: var(--primary); white-space: nowrap; }
+.compare-items { display: flex; gap: var(--space-3); flex: 1; flex-wrap: wrap; }
+.compare-item {
+  display: flex; align-items: center; gap: var(--space-2);
+  background: var(--bg-base); border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3); font-size: 12px; font-weight: 500;
+  border: 1px solid var(--border);
+}
+.compare-item img { width: 30px; height: 30px; object-fit: cover; border-radius: var(--radius-sm); }
+.compare-item button {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--error); color: white;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; border: none;
+}
+.compare-actions { display: flex; gap: var(--space-2); }
