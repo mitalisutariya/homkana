@@ -32,7 +32,7 @@ export default function Auth() {
       return
     }
     try {
-      await axios.post('http://localhost:5500/api/auth/forgotpassword', { email: forgotEmail })
+      await axios.post('https://homkana.onrender.com/api/auth/forgotpassword', { email: forgotEmail })
       showToast('Reset link sent to your email! 📧', 'success')
       setIsForgot(false)
     } catch (err) {

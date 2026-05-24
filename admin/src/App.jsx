@@ -8,8 +8,8 @@ import {
   PieChart, Pie, Cell, BarChart, Bar, Legend 
 } from 'recharts';
 
-const API = 'http://localhost:5500/api'
-const socket = io('http://localhost:5500')
+const API = 'https://homkana.onrender.com/api'
+const socket = io('https://homkana.onrender.com')
 
 // -- Auth State Management --
 const useAdminAuth = () => {

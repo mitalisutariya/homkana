@@ -27,7 +27,9 @@ export default function ResetPassword() {
 
     setLoading(true)
     try {
-      await axios.put(`http://localhost:5500/api/auth/resetpassword/${token}`, { password })
+      await axios.put(`https://homkana.onrender.com/api/auth/resetpassword/${token}`, {
+        password
+      });
       showToast('Password reset successful! 🎉', 'success')
       navigate('/auth')
     } catch (err) {
@@ -48,17 +50,17 @@ export default function ResetPassword() {
         <form className="auth-form animate-fadeIn" onSubmit={handleReset}>
           <h2 className="auth-title">Reset Password 🔐</h2>
           <p className="auth-subtitle">Create a new password for your account.</p>
-          
+
           <div className="form-group">
             <label className="input-label">New Password</label>
             <div className="pass-wrap">
-              <input 
-                className="input" 
-                type={showPass ? 'text' : 'password'} 
+              <input
+                className="input"
+                type={showPass ? 'text' : 'password'}
                 placeholder="Enter new password"
-                value={password} 
-                onChange={e => setPassword(e.target.value)} 
-                required 
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                required
               />
               <button type="button" className="pass-toggle" onClick={() => setShowPass(!showPass)}>
                 {showPass ? <FiEyeOff size={16} /> : <FiEye size={16} />}
@@ -68,13 +70,13 @@ export default function ResetPassword() {
 
           <div className="form-group">
             <label className="input-label">Confirm New Password</label>
-            <input 
-              className="input" 
-              type="password" 
+            <input
+              className="input"
+              type="password"
               placeholder="Re-enter new password"
-              value={confirm} 
-              onChange={e => setConfirm(e.target.value)} 
-              required 
+              value={confirm}
+              onChange={e => setConfirm(e.target.value)}
+              required
             />
           </div>
 

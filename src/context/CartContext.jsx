@@ -8,7 +8,7 @@ import { buildCartLine, toCartSyncPayload } from '../utils/cartItem'
 const CartContext = createContext()
 export const useCart = () => useContext(CartContext)
 
-const socket = io('http://localhost:5500')
+const socket = io('https://homkana.onrender.com')
 
 export function CartProvider({ children }) {
   const { user, refreshUser, updateUserCart } = useAuth()

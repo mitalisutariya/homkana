@@ -5,7 +5,7 @@ import api from '../../api'
 import io from 'socket.io-client'
 import './Orders.css'
 
-const socket = io('http://localhost:5500')
+const socket = io('https://homkana.onrender.com')
 
 const statusClass = (status) =>
   `order-status-pill status-${(status || '').toLowerCase().replace(/\s/g, '-')}`

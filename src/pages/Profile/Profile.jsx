@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 import './Profile.css'
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:5500')
+const socket = io('https://homkana.onrender.com')
 
 
 export default function Profile() {

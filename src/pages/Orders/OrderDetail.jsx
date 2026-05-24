@@ -17,7 +17,7 @@ import { processPayment } from '../../utils/payment'
 import io from 'socket.io-client'
 import './Orders.css'
 
-const socket = io('http://localhost:5500')
+const socket = io('https://homkana.onrender.com')
 
 const CANCELLABLE = ['Pending', 'Confirmed', 'Packed']
 

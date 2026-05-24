@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5500/api',
+  baseURL: 'https://homkana.onrender.com/api',
 });
 
 // Add a request interceptor to include the auth token
