@@ -407,7 +407,7 @@ export default function ProductDetail() {
               </div>
               <div className="delivery-row">
                 <FiRefreshCw size={18} color="var(--primary)" />
-                <div><strong>30-Day</strong> <span>Easy Returns</span></div>
+                <div><strong>7-Day</strong> <span>Easy Returns</span></div>
               </div>
               <div className="delivery-row">
                 <FiShield size={18} color="var(--success)" />

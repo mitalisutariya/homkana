@@ -233,7 +233,7 @@ export default function Home() {
         <div className="container trust-grid">
           {[
             { icon: '🚚', title: 'Free Delivery', desc: 'On orders above ₹499' },
-            { icon: '🔄', title: 'Easy Returns', desc: '30-day return policy' },
+            { icon: '🔄', title: 'Easy Returns', desc: '7-day return policy' },
             { icon: '🔒', title: 'Secure Payment', desc: '100% safe & encrypted' },
             { icon: '🎧', title: '24/7 Support', desc: 'Always here to help' },
           ].map(t => (
